@@ -5,10 +5,10 @@
 ## Endpoints & Parameters
 
 ## Resources
-- This API has a faculty resource which contains faculty and rating attributes. The faculty attribute includes the name of the faculty of the University of Manitoba, and the rating incorporates the number of rates for each faculty.
+This API has a faculty resource which contains faculty and rating attributes. The faculty attribute includes the name of the faculty of the University of Manitoba, and the rating incorporates the number of rates for each faculty.
 
 ```
-class facutlysource 
+class FacutlyResource 
     
     attributes :faculty, :rating
     
