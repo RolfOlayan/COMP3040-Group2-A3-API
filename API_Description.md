@@ -5,21 +5,31 @@
 ## Endpoints & Parameters
 
 ## Resources
-This API has a faculty resource which contains faculty and rating attributes. The faculty attribute includes the name of the faculty of the University of Manitoba, and the rating incorporates the number of rates for each faculty.
+This API has a professor resource which contains name, faculty, and rating attributes. The name attribute contains the name of the professor. The faculty attribute includes the name of the faculty to which the professor belongs. Finally, the rating incorporates the rates for each professor.
 
 ```
-class FacutlyResource 
+class ProfessorResource 
     
-    attributes :faculty, :rating
+    attributes :name, :faculty, :rating
+    
+    # name setter
+    def name = (new_name)
+        @model.name = new_name
+    end
     
     # faculty setter 
     def faculty = (new_faculty)
         @model.faculty = new_faculty
     end
     
-    # rating_num setterr
+    # rating setter
     def rating = (new_rating)
         @model.rating = new_rating
+    end
+    
+    # name getter
+    def name 
+        @model.name.to_s
     end
     
     # faculty getter
