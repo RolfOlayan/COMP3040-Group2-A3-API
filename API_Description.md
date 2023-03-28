@@ -4,6 +4,41 @@
 **How's my prof** is a free online querying tool for professors at the University of Manitoba. Our purpose is to provide information on your past, present, and future instructors using analytics such as faculty, and popularity. We gather our data from the popular **Rate my Professors** as well as the University of Manitoba itself.
 ## Endpoints & Parameters
 
+**/random**
+> Returns a random professor from the University of Manitoba.
+- No parameters.
+
+**/faculty/{faculty_name}**
+> Returns a list of professors from the specified faculty.
+- **faculty_name (string):** Name of the faculty. Required.
+- List of accepted input for _faculty_name_:
+    - agriculturalandfoodsciences
+    - architecture
+    - arts
+    - business
+    - education
+    - engineering
+    - environmentearthresources
+    - extendededucation
+    - graduatestudies
+    - healthsciences
+    - dentalhygiene
+    - dentistry
+    - medicine
+    - nursing
+    - pharmacy
+    - rehabilitationsciences
+    - kinesiologyrecreationmanagement
+    - law
+    - music
+    - science
+    - socialwork
+    - university1
+
+**/rating/{rating_num}**
+> Returns a list of professors that meet the minimum rating of _rating_num_.
+- **rating_num (float):** Minimum rating of the professors to be displayed. Valid values are from 0.0 to 5.0. Required.
+
 ## Resources
 This API has a professor resource which contains name, faculty, and rating attributes. The name attribute contains the name of the professor. The faculty attribute includes the name of the faculty to which the professor belongs. Finally, the rating incorporates the rates for each professor.
 
@@ -45,20 +80,3 @@ end
 ```
 
 ## Sample Requests & Sample Responses
-There are two _sample requests_ for getting a professor's rating from our API, they include:  
- 
-https://api.howsmyprof.org/json?name=adam+muller&fac=computer+science  
-
-The _sample response_ data is formatted in Json, An example:
-
-{  
-    "results":   
-    {  
-       "name":"Adam Muller",  
-       "faculty":"Computer Science",  
-       "rating":"3.4"  
-    },  
-    "status": "success"  
-}  
-
-
