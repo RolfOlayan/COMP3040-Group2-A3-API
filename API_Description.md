@@ -84,7 +84,7 @@ There are two _sample requests_ for getting a professor's rating from our API, t
 ```
 https://api.howsmyprof.org/random  
 https://api.howsmyprof.org/faculty/argiculture  
-https://api.howsmyprof.org/ratingy/1.0  
+https://api.howsmyprof.org/rating/1.0  
 ```
 The _sample response_ data is formatted in Json, these are the sample responses from the sample requests above respectively:
 ```
