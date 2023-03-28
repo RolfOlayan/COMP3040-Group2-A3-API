@@ -45,3 +45,22 @@ end
 ```
 
 ## Sample Requests & Sample Responses
+There are two _sample requests_ for getting a professor's rating from our API, they include:  
+
+https://api.howsmyprof.org/adam+muller/computer+science  
+or  
+https://api.howsmyprof.org/json?name=adam+muller&fac=computer+science  
+
+The _sample response_ data is formatted in Json, An example:
+
+{  
+    "results":   
+    {  
+       "name":"Adam Muller",  
+       "faculty":"Computer Science",  
+       "rating":"3.4"  
+    },  
+    "status": "success"  
+}  
+
+
