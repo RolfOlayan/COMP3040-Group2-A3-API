@@ -80,3 +80,49 @@ end
 ```
 
 ## Sample Requests & Sample Responses
+There are two _sample requests_ for getting a professor's rating from our API, they include:    
+https://api.howsmyprof.org/random  
+https://api.howsmyprof.org/faculty/argiculture  
+https://api.howsmyprof.org/ratingy/1.0  
+
+The _sample response_ data is formatted in Json, these are the sample responses from the sample requests above respectively:
+
+**{**  
+    "results":   
+    {  
+       "name":"Adam Muller",  
+       "faculty":"law",  
+       "rating":"3.4"  
+    },  
+    "status": "success"  
+**}**  
+
+**{**  
+    "results":   
+    {  
+       "name":"Chris Eliott",  
+       "faculty":"agriculture",  
+       "rating":"3.4"  
+    },    
+    {  
+       "name":"Yuvrag Gordon",  
+       "faculty":"agriculture",  
+       "rating":"3.2"  
+    },    
+    {  
+       "name":"Warren Colon",  
+       "faculty":"agriculture",  
+       "rating":"4.9"    
+    }  
+    "status": "success"  
+**}**  
+
+**{**  
+    "results":   
+    {  
+       "name":"Theodore Fulton",  
+       "faculty":"music",  
+       "rating":"1.0"  
+    },  
+    "status": "success"  
+**}**  
