@@ -80,7 +80,7 @@ end
 ```
 
 ## Sample Requests & Sample Responses
-There are two _sample requests_ for getting a professor's rating from our API, they include:    
+There are three _sample requests_ for getting a professor's rating from our API, they include:    
 ```
 https://api.howsmyprof.org/random  
 https://api.howsmyprof.org/faculty/argiculture  
